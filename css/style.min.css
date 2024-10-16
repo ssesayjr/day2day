@@ -2,12 +2,25 @@
  * Roxy: Bootstrap template by GettTemplates.com
  * https://gettemplates.co/roxy
  */
+
+@font-face {
+  font-family: XXIICoolScript-DEMO-Thin;
+  src: url("fonts/XXIICoolScript-DEMO-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: XXIICoolScript-DEMO-Light;
+  src: url("fonts/XXIICoolScript-DEMO-Light.otf") format("opentype");
+}
+
+
 html, body {
   width: 100%;
   overflow-x: hidden; }
 
 body {
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: sans-serif, 'Quintessential';
   font-weight: 300; }
 
 h1,
@@ -22,11 +35,19 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Quintessential', sans-serif;
   margin-top: 0; }
 
+.quintessential-regular {
+    font-family: 'Quintessential', serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 a {
-  color: #ff00cc;
+  font-family: 'Quintessential';
+  color: #434b62;
   transition: all .3s ease-in-out; }
 
 a:focus,
@@ -36,7 +57,7 @@ button:focus {
 .btn:hover,
 a:hover {
   text-decoration: none;
-  color: #333399; }
+  color: #00a1fb; }
 
 img {
   max-width: 100%; }
@@ -54,12 +75,13 @@ section {
   position: relative; }
 
 .section-content {
-  padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-top: 3vw;
+  padding-bottom: 3vw; }
 
 .title-wrap,
 .section-title {
-  text-align: center; }
+  text-align: center; 
+z-index: 1000;}
 
 .shadow {
   box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24), 0 2px 4px 0 rgba(67, 80, 98, 0.1) !important; }
@@ -89,6 +111,12 @@ section {
   font-size: 2rem;
   color: #fff; }
 
+.navbar-img img {
+  width: 75px;
+  margin: 15px 15px 15px 0; 
+
+}
+
 .jumbotron {
   color: #fff;
   padding-top: 80px;
@@ -104,9 +132,28 @@ section {
   @media (max-width: 767px) and (orientation: landscape) {
     .jumbotron {
       min-height: 500px; } }
-  .jumbotron .container {
+  /*.jumbotron .container {
     position: relative;
+    z-index: 1; }*/
+
+  .jumbotron .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     z-index: 1; }
+  
+  .container img.float-left {
+      float: left;
+      width: 45vw;
+      max-width: 75%;
+      max-height: auto;
+      z-index: 200;
+      opacity: 0;
+      overflow: hidden;
+      animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+      animation-delay: .8s; }
+
   .jumbotron:before {
     position: absolute;
     display: block;
@@ -116,25 +163,37 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #ff00cc;
+    background: #434b62;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    background: -webkit-linear-gradient(to right, #00a1fb, #434b62);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to right, #00a1fb, #434b62);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .jumbotron h1 {
+    float: left;
     line-height: .9;
+    font-family: 'XXIICoolScript-DEMO-Thin';
+    position: relative;
     font-weight: bold;
-    display: inline-block;
-    border: 15px solid #fff;
-    padding: 30px;
-    font-size: 9rem;
+    border: 1vw solid #fff;
+    padding: 3vw;
+    font-size: 6vw;
     opacity: 0;
+    overflow: hidden;
     animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
     animation-delay: .8s; }
+   
+.changeMe {
+  font-family: 'Quintessential';
+  font-weight: normal;
+  font-size: 6vw;
+  opacity: 0;
+  animation: 1s fadeInFromTop cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s forwards;
+  animation-delay: .8s;}
+
 
 .jumbotron-single h1 {
-  font-size: 3rem !important; }
+  font-size: 3vw !important; }
 
 .overlay {
   color: #fff; }
@@ -147,11 +206,11 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #ff00cc;
+    background: #434b62;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    background: -webkit-linear-gradient(to right, #00a1fb, #434b62);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to right, #00a1fb, #434b62);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .overlay.bg-white {
     color: #000; }
@@ -175,12 +234,12 @@ section {
 
 .btn-primary {
   display: inline-block;
-  background-color: #ff00cc;
-  border-color: #ff00cc;
+  background-color: #434b62;
+  border-color: #434b62;
   color: #fff; }
   .btn-primary:hover {
-    background-color: #333399;
-    border-color: #333399;
+    background-color: #00a1fb;
+    border-color: #00a1fb;
     color: #fff; }
 
 .btn-outline-primary {
@@ -189,8 +248,8 @@ section {
   background-image: none;
   border-color: #fff; }
   .btn-outline-primary:hover {
-    background-color: #333399;
-    border-color: #333399;
+    background-color: #00a1fb;
+    border-color: #00a1fb;
     color: #fff; }
 
 .btn-shadow {
@@ -200,7 +259,7 @@ section {
   color: #000; }
 
 .btn-link {
-  color: #ff00cc; }
+  color: #434b62; }
 
 /*=====  End of BUTTON  ======*/
 /*==========================================
@@ -209,9 +268,9 @@ section {
 .rectangle-1 {
   width: 2000px;
   height: 400px;
-  background: #8E2DE2;
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: #03f39a;
+  background: -webkit-linear-gradient(to right, #4A00E0, #03f39a);
+  background: linear-gradient(to right, #4A00E0, #03f39a);
   transform-origin: 50% 150% 0;
   position: absolute;
   left: 0;
@@ -221,9 +280,9 @@ section {
 .rectangle-2 {
   width: 2000px;
   height: 400px;
-  background: #8E2DE2;
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: #03f39a;
+  background: -webkit-linear-gradient(to right, #4A00E0, #03f39a);
+  background: linear-gradient(to right, #4A00E0, #03f39a);
   transform-origin: 65% 100% 0;
   position: absolute;
   right: 0;
@@ -399,7 +458,7 @@ section {
     transform: translateY(-13px); }
 
 .progress-bar {
-  background-color: #ff00cc; }
+  background-color: #434b62; }
 
 /*=====  End of FEATURES  ======*/
 /*=============================
@@ -420,7 +479,7 @@ section {
   padding-bottom: 50px; }
 
 .testi-icon {
-  color: #ff00cc; }
+  color: #434b62; }
 
 .testi-content {
   margin-top: 80px;
@@ -444,7 +503,7 @@ section {
     height: 100%;
     outline: none;
     border-radius: 50%;
-    background-color: rgba(255, 0, 204, 0.3);
+    background-color: rgba(0, 255, 42, 0.3);
     text-indent: -999em;
     cursor: pointer;
     position: absolute;
@@ -453,7 +512,7 @@ section {
     transition: box-shadow 0.3s ease, background-color 0.3s ease; }
   .owl-dot.active > span {
     background-color: transparent;
-    box-shadow: 0 0 0 2px #ff00cc; }
+    box-shadow: 0 0 0 2px #434b62; }
 
 .owl-dots {
   position: absolute;
@@ -553,7 +612,7 @@ section {
   background-color: #000;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 30px;
   color: #fff; }
 
 .sidenav-content {
@@ -587,7 +646,7 @@ section {
 
 @media screen and (max-height: 450px) {
   .sidenav {
-    padding-top: 15px; }
+    padding-top: 30px; }
   .sidenav a {
     font-size: 18px; } }
 
@@ -691,7 +750,7 @@ section {
 =            FORM CONTROL            =
 ====================================*/
 .form-control:focus {
-  border-color: #ff00cc;
+  border-color: #434b62;
   box-shadow: 0 0 0 0.2rem rgba(253, 101, 90, 0.25); }
 
 .form-control::-webkit-input-placeholder {
@@ -717,7 +776,13 @@ section {
   display: none; }
 
 .client-slider .client-item {
-  padding: 0 40px; }
+  padding: 0 40px;
+  padding-top: 2vw;
+  padding-bottom: 1vw;
+  width: 300px;
+  height: auto;
+  max-width: 400px;
+  max-height: 400px; }
 
 /*=====  End of CLIENT  ======*/
 /*==================================
@@ -729,28 +794,28 @@ section {
     top: 0;
     height: auto;
     width: 100%;
-    background: #ff00cc;
+    background: #434b62;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    background: -webkit-linear-gradient(to right, #00a1fb, #434b62);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to right, #00a1fb, #434b62);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 11; }
   #header-navbar {
     padding-top: 15px !important;
     padding-bottom: 15px !important; }
   .navbar-transparent .navbar-collapse {
-    background: #ff00cc;
+    background: #434b62;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    background: -webkit-linear-gradient(to right, #00a1fb, #434b62);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to right, #00a1fb, #434b62);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px; } }
 
 @media (max-width: 767px) {
   .jumbotron h1 {
-    font-size: 6rem; }
+    font-size: 6vw; }
   .grid-item {
     width: 100%; }
   .progress {

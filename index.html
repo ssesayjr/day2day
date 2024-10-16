@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="img/icons/d2d_logo_resized_v2.png">
     <!--
      - Roxy: Bootstrap template by GettTemplates.com
      - https://gettemplates.co/roxy
     -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Roxy by GetTemplates.co</title>
+    <title>Day 2 Day</title>
     <meta name="description" content="Roxy">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -17,10 +18,20 @@
     <link rel="stylesheet" href="vendor/select2/select2.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/price_style.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+    <!-- Quintessential Static Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <!-- Allura Static Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.min.css">
@@ -31,39 +42,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
 </head>
-<body data-spy="scroll" data-target="#navbar" class="static-layout">
+<body data-spy="scroll" data-target="#navbar" class="static-layout" style="overflow: hidden;">
 	<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
     <div class="container">
-        <a class="navbar-brand d-flex align-items-center text-white" href="/">
-            <h3 class="font-weight-bolder mb-0">ROXY</h3>
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <div class="navbar-img"> 
+                <img src="img/icons/d2d_logo_resized_v2.png" alt=""> 
+            </div>
+            <!--<h3 class="font-weight-bolder mb-0"> Day 2 Day Eventz</h3> -->
+            
         </a>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-menu"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-nav-header">
+            
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="index.html#PricingOptions">Pricing</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a id="side-search-open" class="nav-link" href="#">
-                        <span class="lnr lnr-magnifier"></span>
-                    </a>
+                    <a class="nav-link" href="index.html#portfolio">Portfolio</a>
                 </li>
-                 <li class="nav-item only-desktop">
-                    <a class="nav-link" id="side-nav-open" href="#">
-                        <span class="lnr lnr-menu"></span>
-                    </a>
-                </li>
+   
+
             </ul>
         </div>
     </div>
@@ -73,13 +85,6 @@
 	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
 	
 	<div class="sidenav-content">
-		<p>
-			Kuncen WB1, Wirobrajan 10010, DIY
-		</p>
-		<p>
-			<span class="fs-16 primary-color">(+68) 120034509</span>
-		</p>
-		<p>info@yourdomain.com</p>
 	</div>
 </div><div id="side-search" class="sidenav">
 	<a href="javascript:void(0)" id="side-search-close">&times;</a>
@@ -91,6 +96,7 @@
 			  <div class="input-group-append">
 			    <button class="input-group-text red lighten-3" id="basic-text1">
 			    	<span class="lnr lnr-magnifier"></span>
+
 			    </button>
 			  </div>
 			</div>
@@ -98,10 +104,18 @@
 		</form>
 	</div>
 	
-</div>	<div class="jumbotron d-flex align-items-center">
-  <div class="container text-center">
-    <h1 class="display-1 mb-4">DAY<br>2<br>DAY</h1>
-  </div>
+</div>	
+
+<div class="containter"></div>
+
+<div class="jumbotron d-flex align-items-center">
+    
+    <div class="container">
+        <img class="float-left" src="img/icons/welcome_splash.png">
+        <div class="container">
+        <h1 class="display-1 mb-4">Day <span class="changeMe">2</span> Day Events</h1> 
+        </div>
+    </div>
   <div class="rectangle-1"></div>
   <div class="rectangle-2"></div>
   <div class="rectangle-transparent-1"></div>
@@ -121,16 +135,22 @@
   <div class="triangle triangle-4">
   	<img src="img/obj_triangle.png" alt="">
   </div>
-</div>	<!-- Features Section-->
+</div>	
+
+
+
+
+<!-- Features Section-->
 <section id="features" class="bg-white">
     <div class="container">
         <div class="section-content">
             <!-- Section Title -->
             <div class="title-wrap mb-5" data-aos="fade-up">
                 <h2 class="section-title">
-                    A template built by <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a>
+                    Make your next event <span style="font-family: XXIICoolScript-DEMO-Light; color: #00a1fb;"> <b>UNFORGETABLE</b></span>
                 </h2>
-                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
+                <br>
+                <p class="section-sub-title">Need the perfect touch for your event? Something interactive, engaging and memorable? We've got it! We support various events, including:  </p>
             </div>
             <!-- End of Section Title -->
             <div class="row">
@@ -141,17 +161,15 @@
                         <div class="col-md-4 col-sm-12 text-center mt-4">
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-cog fs-40"></i>
+                                    <img src="./img/icons/wedding.png" style="max-width: 25%; max-height: auto;">
                                 </div>
-                                <h4>Easy to Customize</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>Weddings</h4>
                             </div>
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-frame-contract fs-40"></i>
+                                    <img src="./img/icons/balloon.png" style="max-width: 25%; max-height: auto;">
                                 </div>
-                                <h4>Pixel Perfect</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>Birthday Parties</h4>
                             </div>
                         </div>
                         <!-- End of Feature Item -->
@@ -159,17 +177,15 @@
                         <div class="col-md-4 col-sm-12 text-center">
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-bubble fs-40"></i>
+                                    <img src="./img/icons/briefcase.png" style="max-width: 25%; max-height: auto;">
                                 </div>
-                                <h4>Full Support</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>Corporate Events</h4>
                             </div>
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-magic-wand fs-40"></i>
+                                    <img src="./img/icons/cap.png" style="max-width: 25%; max-height: auto;">
                                 </div>
-                                <h4>Clean Design</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>Graduations</h4>
                             </div>
                         </div>
                         <!-- End of Feature Item -->
@@ -177,17 +193,15 @@
                         <div class="col-md-4 col-sm-12 text-center mt-4">
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-clock fs-40"></i>
+                                    <img src="./img/icons/extract.png" style="max-width: 25%; max-height: auto;">
                                 </div>
-                                <h4>Ontime Project</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4>Extracurricular Activies</h4>
                             </div>
                             <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
                                 <div class="my-4">
-                                    <i class="lnr lnr-thumbs-up fs-40"></i>
+                                    <img src="./img/icons/activity.png" style="max-width: 25%; max-height: auto;">
                                 </div>
-                                <h4>Built with SASS</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                <h4> And Many More!</h4>
                             </div>
                         </div>
                         <!-- End of Feature Item -->
@@ -198,62 +212,87 @@
         </div>
     </div>
 </section>
-<!-- End of Features Section-->	<section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/bg.jpg);">
+<!--    <section id="section-featurettes" class="featurettes overlay bg-fixed" ></section>
+-->	
 
-    <div class="container">
-        <div class="section-content">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row align-items-center text-white">
+<!-- PRICE SECTION-->
+ <section>
+    <div class="section secPrice overlay bg-fixed" id="PricingOptions">
+        <div class="container">
+            <div class="title-wrap mb-5" data-aos="fade-left">
 
-                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="fade-right">
-                            <h4 class="mb-4">Capture every moments and share it to all your friends</h4>
-                            <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet.</p>
-                            <button type="button" class="btn btn-outline-primary">FEATURES</button>
-                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-
-                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="flip-right">
-                            <img class="my-5" src="img/app-profile-mockup.png" alt="">
-                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
-
-                    </div><!--/ .featurettes-item -->
-
-                </div><!--/ .col-md-12 -->
-
-            </div><!--/ .row -->
-        </div>
-    </div><!--/ .container -->
-
-</section>	<section id="section-featurettes" class="featurettes">
-
-    <div class="container">
-        <div class="section-content">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row align-items-center">
-
-                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="flip-left">
-                            <img class="my-5" src="img/app-profile-mockup.png" alt="">
-                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
-
-                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="fade-left">
-                            <h4 class="mb-4">Capture every moments and share it to all your friends</h4>
-                            <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet.</p>
-                            <div class="progress mb-3">
-                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML5 95%</div>
+            <h2 class="section-title">
+                 <span style="font-size:calc(24px + 1.5vw)">Pricing Guide </span> </h2>
+                <span style="text-align: center;"> <p> <i>*please note these are hourly rates (excuding our combination package)</i></p> </span>
+            <div class="wrapper">
+                <div class="pricing-table gprice-single">
+                    <div class="head">
+                        <h4 class="title">DJ</h4> 
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h1><span style="font-size:calc(10px + 1.5vw)">$200</span></h1>
+                        </div>
+                        <ul>
+                            <li>Get the party started with our DJ services! We ensure every moment is set to the right rhythm. Dance, celebrate and let us handle the soundtrack!</li>
+                            <li>~</li>
+                            <li>- 3 hour minimum</li>
+                            <li>- Travel fee outside 50 mile radius</li>   
+                            <li> </li>
+                        </ul>
+                        <div class="sign-up">
+                            <a href="#" class="btn bordered radius">Request Now</a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="pricing-table gprice-single">
+                        <div class="head">
+                            <h4 class="title">Photobooth</h4>
+                        </div>
+                        <div class="content">
+                            <div class="price">
+                                <h1><span style="font-size:calc(10px + 1.5vw)">$250</span></h1>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">CSS3 90%</div>
+                            <ul>
+                                <li>Capture the moment with our Photo Booth. From fun props to instant prints, we turn every event into a fun-filled photo experience. Snap memories, share smiles, and take home a keepsake!</li>
+                                <li>~</li>
+                                <li>- 3 hour minimum -</li>
+                                <li>- Travel fee outside 50 mile radius -</li>                      
+                            </ul>
+                            <div class="sign-up">
+                                <a href="#" class="btn bordered radius">Request Now</a>
                             </div>
-                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+                        </div>
+                    </div>
+                        <div class="pricing-table gprice-single">
+                            <div class="head">
+                                <h4 class="title">Both</h4>
+                            </div>
+                            <div class="content">
+                                <div class="price">
+                                    <h1><span style="font-size:calc(10px + 1.5vw)"> $1500</span></h1>
+                                </div>
+                                <ul>
+                                    <li>Options available for DJ and Photo Booth Services. Additional services are available upon request; such as graphic design, photography, and wedding officiant.</li>
+                                    <li>~</li>
+                                    <li>- 4 hour minimum ($100/hour after 4 hours) -</li>
+                                    <li>- Travel fee outside 50 mile radius -</li>  
+                                </ul>
+                                <div class="sign-up">
+                                    <a href="#" class="btn bordered radius">Request Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div><!--/ .container -->
+    </div>
+</section>
 
-                    </div><!--/ .featurettes-item -->
 
-                </div><!--/ .col-md-12 -->
+<section id="section-featurettes" class="featurettes">
 
-            </div><!--/ .row -->
-        </div>
-    </div><!--/ .container -->
+    
 
 </section>	<!-- Testimonial Section-->
 <section id="testimonial" class="section-padding bg-fixed bg-white overlay" style="background-image: url(img/bg-white.jpg);">
@@ -261,7 +300,8 @@
         <div class="section-content" data-aos="fade-up">
             <div class="heading-section text-center">
                 <h2>
-                    User Testimonials
+                    <span style="font-family: XXIICoolScript-DEMO-Thin; font-size: 4vw; color: #03f39a;font-size:calc(24px + 1.5vw);
+"> Client Testimonials </span>
                 </h2>
             </div>
             <div class="row">
@@ -269,14 +309,13 @@
                 <div class="testi-content testi-carousel owl-carousel">
                     <div class="testi-item text-center">
                         <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <h4 class="testi-text"><b>ROXY</b> is best theme i used so far.<br> It’s ideal for guys without coding knowledge like me!</h4>
+                        <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br> non doloribus ut, alias doloremque perspiciatis.</h4>
                         <div class="testi-meta-inner d-flex justify-content-center align-items-center">
                             <div class="testi-img mr-2">
-                                <img src="img/testi-1.jpg" alt="">
+                                <img src="img/sam.png" alt="">
                             </div>
                             <div class="testi-details">
-                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
-                                <p class="testi-desc mb-0">Web Designer</p>
+                                <p class="testi-author mb-0 font-weight-bolder">Samuel Sesay</p>
                             </div>
                         </div>
                         
@@ -290,7 +329,6 @@
                             </div>
                             <div class="testi-details">
                                 <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
-                                <p class="testi-desc mb-0">Web Designer</p>
                             </div>
                         </div>
                     </div>
@@ -299,11 +337,10 @@
                         <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br> non doloribus ut, alias doloremque perspiciatis.</h4>
                         <div class="testi-meta-inner d-flex justify-content-center align-items-center">
                             <div class="testi-img mr-2">
-                                <img src="img/testi-1.jpg" alt="">
+                                <img src="img/sam.png" alt="">
                             </div>
                             <div class="testi-details">
                                 <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
-                                <p class="testi-desc mb-0">Web Designer</p>
                             </div>
                         </div>
                     </div>
@@ -313,14 +350,19 @@
         </div>
     </div>
 </section>
-<!-- End of Testimonial Section-->	<!-- Portfolio Section -->
+<!-- End of Testimonial Section-->	
+ 
+<!-- Portfolio Section -->
 <section id="portfolio" class="bg-white">
     <div class="container">
         <div class="section-content">
             <!-- Section Title -->
             <div class="title-wrap">
-                <h2 class="section-title">Our <b>Awesome</b> Works</h2>
-                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
+                <h2 class="section-title">
+                    <span style="font-family: XXIICoolScript-DEMO-Thin; font-size: 4vw; color: #00a1fb; font-size:calc(24px + 1.5vw)"> Our <b>Awesome</b> Work </span>
+                </h2>
+                <br>
+                <p class="section-sub-title"> Take a look at our portfolio; the work we've done and the amazing people who were a part of it!</p>
             </div>
             <!-- End of Section Title -->
             <div class="row">
@@ -329,9 +371,9 @@
                     <!-- Btn Filter -->
                     <div class="filter-button-group btn-filter d-flex justify-content-center">
                         <a tabindex="0" class="is-checked" data-filter="*">Show All</a>
-                        <a tabindex="0" data-filter=".minimalism">Minimalism</a>
-                        <a tabindex="0" data-filter=".vintage">Vintage</a>
-                        <a tabindex="0" data-filter=".creative">Creative</a>
+                        <a tabindex="0" data-filter=".minimalism"> Birthday</a>
+                        <a tabindex="0" data-filter=".vintage">Wedding</a>
+                        <a tabindex="0" data-filter=".creative">Mixture</a>
                     </div>
                     <!-- End of Btn Filter -->
                     <!-- Portfolio Content -->
@@ -341,10 +383,10 @@
                         <!-- Portfolio Item -->
                         <div class="grid-item minimalism" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-1.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/pic5.png" alt="portfolio-img" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-1.jpg" title="Photo-1">
+                                        <a class="img-pop" data-rel="lightcase" href="img/pic5.png" title="Fammily Birthday">
                                             <span class="lnr lnr-move"></span>
                                         </a>
                                         <a class="ext-link" href="https://unsplash.com/" target="_blank">
@@ -352,7 +394,7 @@
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Camera</h4>
+                                        <h4>Birthday Family</h4>
                                     </div>
                                 </div>
 
@@ -362,10 +404,10 @@
                         <!-- Portfolio Item -->
                         <div class="grid-item vintage" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-6.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/pic2.png" alt="portfolio-img" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-6.jpg" title="Ship">
+                                        <a class="img-pop" data-rel="lightcase" href="img/pic2.png" title="The Squad">
                                             <span class="lnr lnr-move"></span>
                                         </a>
                                         <a class="ext-link" href="https://unsplash.com/" target="_blank">
@@ -373,7 +415,7 @@
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Flower</h4>
+                                        <h4>Group Wedding</h4>
                                     </div>
                                 </div>
 
@@ -383,10 +425,10 @@
                         <!-- Portfolio Item -->
                         <div class="grid-item creative grid-item-height" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-2.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/pic6.png" alt="portfolio-img" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-2.jpg" title="Tracy Portrait">
+                                        <a class="img-pop" data-rel="lightcase" href="img/pic6.png" title="Birthday Friends">
                                             <span class="lnr lnr-move"></span>
                                         </a>
                                         <a class="ext-link" href="https://unsplash.com/" target="_blank">
@@ -394,7 +436,7 @@
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Breakfast</h4>
+                                        <h4>Birthday Friends</h4>
                                     </div>
                                 </div>
 
@@ -404,10 +446,10 @@
                         <!-- Portfolio Item -->
                         <div class="grid-item creative" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-7.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/pic4.png" alt="portfolio-img" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-7.jpg" title="Guitar">
+                                        <a class="img-pop" data-rel="lightcase" href="img/pic4.png" title="Group Wedding">
                                             <span class="lnr lnr-move"></span>
                                         </a>
                                         <a class="ext-link" href="https://unsplash.com/" target="_blank">
@@ -415,7 +457,7 @@
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Chair</h4>
+                                        <h4>Group Wedding</h4>
                                     </div>
                                 </div>
 
@@ -425,10 +467,10 @@
                         <!-- Portfolio Item -->
                         <div class="grid-item vintage" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-4.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/pic3.png" alt="portfolio-img" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-4.jpg" title="Bookself">
+                                        <a class="img-pop" data-rel="lightcase" href="img/pic3.png" title="Team Bride">
                                             <span class="lnr lnr-move"></span>
                                         </a>
                                         <a class="ext-link" href="https://unsplash.com/" target="_blank">
@@ -436,7 +478,7 @@
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Hidden Book</h4>
+                                        <h4>Team Bride</h4>
                                     </div>
                                 </div>
 
@@ -446,10 +488,10 @@
                         <!-- Portfolio Item -->
                         <div class="grid-item creative" data-aos="fade-up">
                             <div class="grid-item-wrapper">
-                                <img src="img/photo-9.jpg" alt="portfolio-img" class="portfolio-item">
+                                <img src="img/pic1.png" alt="portfolio-img" class="portfolio-item">
                                 <div class="grid-info">
                                     <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-9.jpg" title="Guitar">
+                                        <a class="img-pop" data-rel="lightcase" href="img/pic1.png" title="Father & Daughters">
                                             <span class="lnr lnr-move"></span>
                                         </a>
                                         <a class="ext-link" href="https://unsplash.com/" target="_blank">
@@ -457,7 +499,7 @@
                                         </a>
                                     </div>
                                     <div class="grid-title">
-                                        <h4>Red</h4>
+                                        <h4>Father & Daughters</h4>
                                     </div>
                                 </div>
 
@@ -473,37 +515,37 @@
     </div>
 </section>
 <!-- End of Portfolio Section -->	<!-- Client Section -->
-<section id="client" class="overlay bg-fixed" style="background-image: url(img/bg.jpg);">
+<section id="client" class="overlay bg-fixed" style="background-image: url(img/bg_v2.png);">
     <div class="container">
         <div class="section-content" data-aos="fade-up">
             <div class="row ">
                 <div class="col-md-12">
                     <!-- Section Title -->
-                    <div class="title-wrap mb-5">
-                        <h2>Who love to <span> work</span> with us</h2>
-                    </div>
+
                     <!-- End of Section Title -->
                 </div>
                 <!-- Client Holder -->
                 <div class="col-md-12 client-holder">
                     <div class="client-slider owl-carousel">
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <span >
+                                <img class="img-responsive" src="img/pol_1.png" alt="" >
+                            </span>
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/pol_2.png" alt=" " style="height: auto; width: 250px;">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/pol_3.png" alt=" ">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/pol_4.png" alt=" ">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/pol_5.png" alt=" ">
                         </div>
                         <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
+                            <img class="img-responsive" src="img/pol_3.png" alt=" ">
                         </div>
                     </div>
                     <!-- End of Client Holder -->
@@ -547,28 +589,31 @@
                 </div>
             </div>
             <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
+                <span style="max-width:50px; max-height: auto; position: relative; left: 25%; transform: translate(-25%); padding-bottom: 10vw;">
+                    <img src="./img/icons/d2d_logo_resized_v2.png">
+                 </span>
                 <h2 class="mb-4">
-                    Best solution to create any website. Pay once.
+                    Best solution to enhance your event.
                 </h2>
-                <p class="mb-4">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <p class="mb-4">Get in touch for custom solutions. We provide exceptional solutions for various events.</p>
 
                 <ul class="list-inline py-2">
                     <li class="list-inline-item text-center">
                         <span class="lnr fs-40 lnr-rocket"></span>
-                        <p>Fast delivery</p>
+                        <p>Fast Response</p>
                     </li>
                     <li class="list-inline-item text-center">
                         <span class="lnr fs-40 lnr-magic-wand"></span>
-                        <p>Awesome design</p>
+                        <p>Creative Touch</p>
                     </li>
                     <li class="list-inline-item text-center">
                         <span class="lnr fs-40 lnr-cog"></span>
-                        <p>Easy to customize</p>
+                        <p>Unique Solutions</p>
                     </li>
                 </ul>
 
-                <a href="#" class="btn btn-link p-0">
-                    <span>PURCHASE NOW</span>
+                <a href="index.html#PricingOptions" class="btn btn-link p-0">
+                    <span>PRICING GUIDE</span>
                     <span class="lnr lnr-arrow-right"></span>
                 </a>
             </div>
@@ -577,20 +622,15 @@
     </div>
 </section>
 <!-- End of Reservation Section -->	<!-- Features Section-->
-<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
+<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg_v2.png); max-height: 3.5vw;">
     <div class="container">
         <div class="section-content" data-aos="fade-up">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="mb-2">Make a beautiful website, or million of them</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veritatis qui eligendi delectus quia fuga!</p>
-                    <a class="btn btn-outline-primary btn-lg">FEATURES</a>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
 <!-- End of Features Section--></div>
+
 <footer class="mastfoot my-3">
     <div class="inner container">
          <div class="row">
@@ -598,32 +638,36 @@
          		
          	</div>
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		<p class="mx-auto text-center mb-0">&copy; 2019 Roxy. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a>.</p>
+         		<p class="mx-auto text-center mb-0">&copy; <span style="font-family: 'Quintessential';">2024 Day 2 Day Events, All rights reserved.</span></p>
+                <br>
+
          	</div>
            
             <div class="col-lg-4 col-md-12">
             	<nav class="nav nav-mastfoot justify-content-center">
-	                <a class="nav-link" href="#">
+	                <a class="nav-link" href="https://www.instagram.com/eventz_d2d?igsh=MTRtYXRrMTdtNzl3aA==">
 	                	<i class="fab fa-facebook-f"></i>
 	                </a>
-	                <a class="nav-link" href="#">
+	                <a class="nav-link" href="https://www.instagram.com/eventz_d2d?igsh=MTRtYXRrMTdtNzl3aA==">
 	                	<i class="fab fa-twitter"></i>
 	                </a>
-	                <a class="nav-link" href="#">
+	                <a class="nav-link" href="https://www.instagram.com/eventz_d2d?igsh=MTRtYXRrMTdtNzl3aA==">
 	                	<i class="fab fa-instagram"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-linkedin"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-youtube"></i>
 	                </a>
 	            </nav>
             </div>
-            
+
+
+        </div>
+        <div style="position: relative;">
+            <span style="max-width:50px; max-height: auto; position: absolute; left: 50%; transform: translate(-50%); padding-bottom: 5vw;">
+            <img src="./img/icons/d2d_logo_resized_v2.png">
+            </span>
         </div>
     </div>
-</footer>	<!-- External JS -->
+</footer>
+
+<!-- External JS -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<script src="vendor/bootstrap/popper.min.js"></script>
 	<script src="vendor/bootstrap/bootstrap.min.js"></script>
