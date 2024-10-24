@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: inherit;
+    font-family: sans-serif, 'Quintessential';
     font-size: 14px;
 
 }
@@ -112,15 +112,17 @@ section {position: inherit;}
 }
 .pricing-table .content .price h1{
     color:#fff;
-    font-size: 1.8vw;
     font-weight: 500;
-    padding-top: 25px;
+    padding-top: 5px;
 
 }
 .pricing-table .content ul{
+    justify-content: center;
    list-style-type: none;
    margin-bottom: 20px;
-   padding-top: 10px;
+   padding: 10px;
+   min-height: 400px;
+   height: 420px;
 }
 
 .pricing-table .content ul li{
