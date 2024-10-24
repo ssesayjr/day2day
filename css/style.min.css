@@ -932,6 +932,7 @@ z-index: 1000;}
   font-size:calc(4px + .5vw);
 }
 
+
 /*=====  End of CLIENT  ======*/
 /*==================================
 =            RESPONSIVE            =
@@ -967,6 +968,9 @@ z-index: 1000;}
   .changeMe {
     font-size: 16vw;
   }  
+
+ 
+
   .pricing-table .content .price h1 span{
     font-size:calc(16px + 1.2vw)
   }
@@ -991,6 +995,8 @@ z-index: 1000;}
   text-align: center;
   z-index: 1000;
  }
+
+ 
   #contactInfo h1 {
     width: 100%;
     justify-content: center;
