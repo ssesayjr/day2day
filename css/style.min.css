@@ -932,6 +932,11 @@ z-index: 1000;}
   font-size:calc(4px + .5vw);
 }
 
+.line:before {
+  content: "";
+  border-left: 1px solid;
+  padding-left: 5px;
+}
 
 /*=====  End of CLIENT  ======*/
 /*==================================
